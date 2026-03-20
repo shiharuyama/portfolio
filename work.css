@@ -155,6 +155,27 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ─────────────────────────────────────
+   サイトリンク
+───────────────────────────────────── */
+.site-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 20px;
+    font-size: 13px;
+    color: var(--ink-2);
+    border: 1px solid var(--line);
+    padding: 8px 20px;
+    border-radius: 40px;
+    transition: background var(--transition), border-color var(--transition);
+}
+
+.site-link:hover {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ─────────────────────────────────────
    MAIN VISUAL（レンズズーム）
 ───────────────────────────────────── */
 .visual-block {
