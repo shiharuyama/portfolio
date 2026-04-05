@@ -11,6 +11,7 @@
     href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+JP:wght@300;400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -33,39 +34,24 @@
 
     <!-- HERO -->
     <section class="hero" id="hero" aria-label="イントロダクション">
-      <div class="hero__cells" id="cellsLayer" aria-hidden="true"></div>
       <div class="hero__grid-lines" aria-hidden="true"></div>
 
       <div class="container hero__inner">
-        <p class="hero__eyebrow">Web Designer &amp; Graphic Designer</p>
-        <h2 class="hero__title">
-          伝わるデザインを<br>
-          かたちに。
-        </h2>
-        <p class="hero__desc">
-          グラフィックからWebまで、目的・ターゲットに合ったビジュアルを制作します。
-        </p>
-        <div class="hero__palette" role="group" aria-label="カラーモード選択">
-          <button class="palette-btn is-active" data-color="0" aria-label="カラー1（ネイビー）"></button>
-          <button class="palette-btn" data-color="1" aria-label="カラー2（ブルー）"></button>
-          <button class="palette-btn" data-color="2" aria-label="カラー3（ティール）"></button>
-          <button class="palette-btn" data-color="3" aria-label="カラー4（スカイ）"></button>
-        </div>
+        <p class="hero__eyebrow fade-up">Web Designer &amp; Graphic Designer</p>
+        <h2 class="hero__title fade-up" style="transition-delay:.05s">S. Haruyama</h2>
       </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about" class="section">
       <div class="container">
-        <div class="section__header">
+        <div class="section__header fade-up">
           <span class="section__num" aria-hidden="true">01</span>
           <h2 class="section__title">自己紹介</h2>
         </div>
-        <p class="about__text">
-          バナーやショップカード、パンフレットなどのグラフィック制作から、
-          Figmaを使用したWebデザイン、HTML/CSSによるコーディングまで学習しています。
-          見た目の美しさだけでなく、目的やターゲットに合わせた
-          「伝わるデザイン」を意識して制作しています。
+        <p class="about__text fade-up" style="transition-delay:.05s">
+          グラフィックデザインからWebデザイン・コーディングまで、幅広く制作しています。<br>
+          使用ツールはIllustrator / Photoshop / InDesign / Figmaなど。
         </p>
       </div>
     </section>
@@ -73,7 +59,7 @@
     <!-- WORKS -->
     <section id="works" class="section">
       <div class="container">
-        <div class="section__header">
+        <div class="section__header fade-up">
           <span class="section__num" aria-hidden="true">02</span>
           <h2 class="section__title">制作実績</h2>
         </div>
@@ -81,7 +67,7 @@
         <div class="works-grid">
 
           <!-- 作品1 -->
-          <article class="work">
+          <article class="work fade-up" style="transition-delay:.05s">
             <a href="work01.html" class="link-underline">
               <div class="work__thumb">
                 <img src="image/kaden_banner.jpg" alt="新生活向け家電セールバナー">
@@ -109,7 +95,7 @@
           </article>
 
           <!-- 作品2 -->
-          <article class="work">
+          <article class="work fade-up" style="transition-delay:.1s">
             <a href="work02.html" class="link-underline">
               <div class="work__thumb">
                 <img src="image/kituke_banner.jpg" alt="着付け一日講座バナー">
@@ -137,7 +123,7 @@
           </article>
 
           <!-- 作品3 -->
-          <article class="work">
+          <article class="work fade-up" style="transition-delay:.15s">
             <a href="work03.html" class="link-underline">
               <div class="work__thumb">
                 <img src="image/yohaku_shisha.png" alt="個室シーシャのショップカード">
@@ -165,7 +151,7 @@
           </article>
 
           <!-- 作品4 -->
-          <article class="work">
+          <article class="work fade-up" style="transition-delay:.2s">
             <a href="https://shiharuyama.github.io/mirai/" target="_blank" rel="noopener" class="link-underline">
               <div class="work__thumb">
                 <img src="image/mirai_PC.jpg" alt="株式会社みらい建設 ホームページ">
@@ -193,7 +179,7 @@
           </article>
 
           <!-- 作品5 -->
-          <article class="work">
+          <article class="work fade-up" style="transition-delay:.25s">
             <a href="work05.html" class="link-underline">
               <div class="work__thumb">
                 <img src="image/hotel_pamphlet2.jpg" alt="HOTEL SEASIDE 三つ折りパンフレット">
@@ -224,7 +210,7 @@
           </article>
 
           <!-- 作品6 -->
-          <article class="work">
+          <article class="work fade-up" style="transition-delay:.3s">
             <a href="https://shiharuyama.github.io/HOTEL-SEASIDE/" target="_blank" rel="noopener"
               class="link-underline">
               <div class="work__thumb">
@@ -255,46 +241,53 @@
             </div>
           </article>
         </div>
-        <!-- SKILLS -->
-        <section id="skills" class="section">
-          <div class="container">
-            <div class="section__header">
-              <span class="section__num" aria-hidden="true">03</span>
-              <h2 class="section__title">スキル</h2>
-            </div>
-            <ul class="skills" aria-label="使用ツール・スキル一覧">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Figma</li>
-              <li>Photoshop</li>
-              <li>Illustrator</li>
-              <li>InDesign</li>
-            </ul>
-          </div>
-        </section>
+      </div>
+    </section>
 
-        <!-- CONTACT -->
-        <section id="contact" class="section">
-          <div class="container">
-            <div class="section__header">
-              <span class="section__num" aria-hidden="true">04</span>
-              <h2 class="section__title">連絡先</h2>
-            </div>
-            <p class="contact__text">shi.haruyama@gmail.com</p>
-            <a href="https://drive.google.com/file/d/1zNnY1Y2fSuMm6qxOGU6v32nCkeVWgcn7/view?usp=drive_link" target="_blank" rel="noopener" class="portfolio-btn">
-              紙版ポートフォリオを見る →
-            </a>
-          </div>
-        </section>
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section__header fade-up">
+          <span class="section__num" aria-hidden="true">03</span>
+          <h2 class="section__title">スキル</h2>
+        </div>
+        <ul class="skills fade-up" style="transition-delay:.05s" aria-label="使用ツール・スキル一覧">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Figma</li>
+          <li>Photoshop</li>
+          <li>Illustrator</li>
+          <li>InDesign</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section__header fade-up">
+          <span class="section__num" aria-hidden="true">04</span>
+          <h2 class="section__title">連絡先</h2>
+        </div>
+        <p class="contact__text fade-up" style="transition-delay:.05s">
+          <span class="email-wrap" id="emailWrap">
+            <span class="email-link" id="emailLink"></span>
+            <span class="email-tooltip" id="emailTooltip">クリックでコピー</span>
+          </span>
+        </p>
+        <a href="https://drive.google.com/file/d/1zNnY1Y2fSuMm6qxOGU6v32nCkeVWgcn7/view?usp=drive_link" target="_blank"
+          rel="noopener" class="portfolio-btn fade-up" style="transition-delay:.1s">
+          紙版ポートフォリオを見る <span class="arrow">→</span>
+        </a>
+      </div>
+    </section>
 
   </main>
 
   <footer class="footer">
     <p>© S. Haruyama All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 
 </body>
 

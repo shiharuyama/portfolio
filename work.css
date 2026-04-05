@@ -2,12 +2,12 @@
    TOKENS（index.html と共通）
 ───────────────────────────────────── */
 :root {
-  --ink:    #18181b;
-  --ink-2:  #52525b;
-  --ink-3:  #a1a1aa;
-  --paper:  #fafaf9;
-  --paper-2:#f4f4f0;
-  --line:   #e4e4e7;
+  --ink: #18181b;
+  --ink-2: #52525b;
+  --ink-3: #a1a1aa;
+  --paper: #fafaf9;
+  --paper-2: #f4f4f0;
+  --line: #e4e4e7;
   --c1: #2a589f;
   --c2: #4775ba;
   --c3: #2b9c94;
@@ -15,8 +15,18 @@
   --transition: .22s ease;
 }
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
 
 body {
   font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
@@ -28,7 +38,10 @@ body {
   overflow-x: hidden;
 }
 
-a { color: inherit; text-decoration: none; }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
 /* ─────────────────────────────────────
    LAYOUT
@@ -66,7 +79,11 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: .05em;
 }
 
-.nav { list-style: none; display: flex; gap: 28px; }
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
 
 .nav a {
   font-size: 13px;
@@ -74,7 +91,10 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: .04em;
   transition: color var(--transition);
 }
-.nav a:hover { color: var(--ink); }
+
+.nav a:hover {
+  color: var(--ink);
+}
 
 /* ─────────────────────────────────────
    MAIN WRAPPER
@@ -98,7 +118,10 @@ a { color: inherit; text-decoration: none; }
   padding-bottom: 0;
   transition: color var(--transition);
 }
-.back-link:hover { color: var(--ink); }
+
+.back-link:hover {
+  color: var(--ink);
+}
 
 /* ─────────────────────────────────────
    TITLE BLOCK
@@ -119,8 +142,16 @@ a { color: inherit; text-decoration: none; }
   border-radius: 20px;
   margin-bottom: 20px;
 }
-.work-tag--graphic { background: #fef3c7; color: #78350f; }
-.work-tag--web     { background: #dbeafe; color: #1e3a8a; }
+
+.work-tag--graphic {
+  background: #fef3c7;
+  color: #78350f;
+}
+
+.work-tag--web {
+  background: #dbeafe;
+  color: #1e3a8a;
+}
 
 .work-title {
   font-family: 'DM Serif Display', serif;
@@ -140,10 +171,21 @@ a { color: inherit; text-decoration: none; }
   max-width: 520px;
 }
 
-.meta dt { color: var(--ink-3); white-space: nowrap; }
-.meta dd { color: var(--ink-2); }
+.meta dt {
+  color: var(--ink-3);
+  white-space: nowrap;
+}
 
-.badges { display: flex; flex-wrap: wrap; gap: 5px; }
+.meta dd {
+  color: var(--ink-2);
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
 .badge {
   font-size: 11px;
   color: var(--ink-2);
@@ -158,21 +200,21 @@ a { color: inherit; text-decoration: none; }
    サイトリンク
 ───────────────────────────────────── */
 .site-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    margin-top: 20px;
-    font-size: 13px;
-    color: var(--ink-2);
-    border: 1px solid var(--line);
-    padding: 8px 20px;
-    border-radius: 40px;
-    transition: background var(--transition), border-color var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 20px;
+  font-size: 13px;
+  color: var(--ink-2);
+  border: 1px solid var(--line);
+  padding: 8px 20px;
+  border-radius: 40px;
+  transition: background var(--transition), border-color var(--transition);
 }
 
 .site-link:hover {
-    background: rgba(0, 0, 0, 0.05);
-    border-color: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.1);
 }
 
 /* ─────────────────────────────────────
@@ -210,45 +252,61 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* バナー：正方形 */
-.lens-wrap--square { aspect-ratio: 1 / 1; }
-.lens-wrap--square img { height: 100%; object-fit: contain; }
+.lens-wrap--square {
+  aspect-ratio: 1 / 1;
+}
+
+.lens-wrap--square img {
+  height: 100%;
+  object-fit: contain;
+}
 
 /* バナー横長 */
-.lens-wrap--portrait { aspect-ratio: 300 / 250; }
-.lens-wrap--portrait img { height: 100%; object-fit: contain; }
+.lens-wrap--portrait {
+  aspect-ratio: 300 / 250;
+}
+
+.lens-wrap--portrait img {
+  height: 100%;
+  object-fit: contain;
+}
 
 /* ショップカード */
 .lens-wrap--cards {
   display: flex;
   gap: 50px;
 }
-.lens-wrap--card { aspect-ratio: 55 / 91; }
-.lens-wrap--card img { height: 100%; object-fit: contain; }
+
+.lens-wrap--card {
+  aspect-ratio: 55 / 91;
+}
+
+.lens-wrap--card img {
+  height: 100%;
+  object-fit: contain;
+}
 
 /* パンフレット：A4横（2面分） */
-.lens-wrap--pamphlet { aspect-ratio: 297 / 210; }
-.lens-wrap--pamphlet img { height: 100%; object-fit: contain; }
+.lens-wrap--pamphlet {
+  aspect-ratio: 297 / 210;
+}
+
+.lens-wrap--pamphlet img {
+  height: 100%;
+  object-fit: contain;
+}
 
 .lens {
   position: absolute;
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 2px solid rgba(255,255,255,.65);
-  box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 8px 32px rgba(0,0,0,.2);
+  border: 2px solid rgba(255, 255, 255, .65);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 8px 32px rgba(0, 0, 0, .2);
   pointer-events: none;
   display: none;
   background-repeat: no-repeat;
 }
-
-.lens::before,
-.lens::after {
-  content: '';
-  position: absolute;
-  background: rgba(255,255,255,.3);
-}
-.lens::before { width: 1px; height: 100%; left: 50%; transform: translateX(-50%); }
-.lens::after  { width: 100%; height: 1px; top: 50%; transform: translateY(-50%); }
 
 .visual-block__hint {
   font-size: 11px;
@@ -278,7 +336,6 @@ a { color: inherit; text-decoration: none; }
   font-size: 15px;
   color: var(--ink-2);
   line-height: 1.9;
-  max-width: 560px;
 }
 
 /* ─────────────────────────────────────
@@ -303,7 +360,10 @@ a { color: inherit; text-decoration: none; }
   color: var(--ink-3);
   transition: color var(--transition);
 }
-.nav-link:hover { color: var(--ink); }
+
+.nav-link:hover {
+  color: var(--ink);
+}
 
 /* ─────────────────────────────────────
    FOOTER
@@ -325,7 +385,30 @@ a { color: inherit; text-decoration: none; }
   transform: translateY(20px);
   transition: opacity .6s ease, transform .6s ease;
 }
+
 .fade-up.in {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ─────────────────────────────────────
+   RESPONSIVE
+───────────────────────────────────── */
+@media (max-width: 700px) {
+  .header__inner {
+    padding-block: 14px;
+  }
+
+  .nav {
+    gap: 16px;
+  }
+
+  .nav a {
+    font-size: 12px;
+  }
+
+  .concept-block__text br {
+    display: none;
+  }
+
 }
